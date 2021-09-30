@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Book Editing Services landing page</title>
+    <meta
+      name="description"
+      content="How do you get the most out of your book? By editing it to perfection with our professional book editing services. Find here: the best book editors for hire. "
+    />
+
+    <!-- services header -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .logo img {
+        display: block;
+        width: 320px;
+      }
+      .tp-nv {
+        text-align: right;
+      }
+      .tp-nv li {
+        font-size: 18px;
+        color: #bbbbae;
+        margin: 0 0 0 20px;
+        display: inline-block;
+      }
+      .tp-nv li a {
+        color: #16b4d8;
+      }
+      .tp-nv li a i {
+        color: #bbbbae;
+        padding: 0 5px 0 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- popup form -->
+    <div id="entry-popup">
+      <div class="container">
+        <div class="entry-box" data-form-type="popup_form">
+          <a href="javascript:;" id="entry-box_close" class="closed">
+            <svg
+              width="24"
+              height="24"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewbox="0 0 123.05 123.05"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  d="M121.325,10.925l-8.5-8.399c-2.3-2.3-6.1-2.3-8.5,0l-42.4,42.399L18.726,1.726c-2.301-2.301-6.101-2.301-8.5,0l-8.5,8.5
+                     c-2.301,2.3-2.301,6.1,0,8.5l43.1,43.1l-42.3,42.5c-2.3,2.3-2.3,6.1,0,8.5l8.5,8.5c2.3,2.3,6.1,2.3,8.5,0l42.399-42.4l42.4,42.4
+                     c2.3,2.3,6.1,2.3,8.5,0l8.5-8.5c2.3-2.3,2.3-6.1,0-8.5l-42.5-42.4l42.4-42.399C123.625,17.125,123.625,13.325,121.325,10.925z"
+                ></path>
+              </g>
+            </svg>
+          </a>
+          <form
+            method="post"
+            enctype="multipart/form-data"
+            action="thankyou.php"
+          >
+            <input type="hidden" id="formType" name="formType" />
+            <input type="hidden" id="referer" name="referer" />
+            <div id="input-box"></div>
+            <div class="col-sm-12 entry-right">
+              <div class="form-text-1">
+                <h3><span class="red">SIGN</span> UP NOW</h3>
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="con_name"
+                  aria-describedby="name"
+                  placeholder="Your Name"
+                  data-validation="required"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="con_email"
+                  aria-describedby="email"
+                  placeholder="Email Address"
+                  data-validation="required"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="tel"
+                  class="form-control phone"
+                  id="phone"
+                  name="phone"
+                  aria-describedby="phone"
+                  placeholder="Phone"
+                  data-validation="required"
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  placeholder="Message"
+                  name="con_message"
+                ></textarea>
+              </div>
+              <div class="form-group form-btn">
+                <div id="formResult" class="popFormResult"></div>
+                <div class="clearfix"></div>
+                <input
+                  type="submit"
+                  id="signupBtn"
+                  class="btn-default btn-2"
+                  name="submit"
+                  value="Submit"
+                />
+              </div>
+            </div>
+          </form>
+          <span class="layer-1"></span>
+          <span class="layer-2"></span>
+          <span class="layer-3"></span>
+          <span class="layer-4"></span>
+        </div>
+      </div>
+    </div>
+    <!--form Modal Popup-->
+
+    <!--Tank you pop up-->
+    <div class="thanks_pop_up">
+      <div class="popup_box">
+        <i class="fas fa-times-circle cross_icon fa-3x"></i>
+        <h1>Thank you</h1>
+        <p>thanks for choosing us</p>
+      </div>
+    </div>
+    <!--Thank you pop up-->
+
+    <!-- Mobile icon -->
+    <a class="call-icon-for-mob" href="tel:(800) 861-8851">
+      <svg
+        width="20"
+        height="20"
+        viewbox="0 0 58 58"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g fill-rule="evenodd">
+          <g fill-rule="nonzero" transform="translate(-1)">
+            <path
+              id="Shape"
+              d="m25.017 33.983c-5.536-5.536-6.786-11.072-7.068-13.29-.0787994-.6132828.1322481-1.2283144.571-1.664l4.48-4.478c.6590136-.6586066.7759629-1.685024.282-2.475l-7.133-11.076c-.5464837-.87475134-1.6685624-1.19045777-2.591-.729l-11.451 5.393c-.74594117.367308-1.18469338 1.15985405-1.1 1.987.6 5.7 3.085 19.712 16.855 33.483s27.78 16.255 33.483 16.855c.827146.0846934 1.619692-.3540588 1.987-1.1l5.393-11.451c.4597307-.9204474.146114-2.0395184-.725-2.587l-11.076-7.131c-.7895259-.4944789-1.8158967-.3783642-2.475.28l-4.478 4.48c-.4356856.4387519-1.0507172.6497994-1.664.571-2.218-.282-7.754-1.532-13.29-7.068z"
+            ></path>
+            <path
+              id="Shape"
+              d="m47 31c-1.1045695 0-2-.8954305-2-2-.0093685-8.2803876-6.7196124-14.9906315-15-15-1.1045695 0-2-.8954305-2-2s.8954305-2 2-2c10.4886126.0115735 18.9884265 8.5113874 19 19 0 1.1045695-.8954305 2-2 2z"
+            ></path>
+            <path
+              id="Shape"
+              d="m57 31c-1.1045695 0-2-.8954305-2-2-.0154309-13.800722-11.199278-24.9845691-25-25-1.1045695 0-2-.8954305-2-2s.8954305-2 2-2c16.008947.01763587 28.9823641 12.991053 29 29 0 .530433-.2107137 1.0391408-.5857864 1.4142136-.3750728.3750727-.8837806.5857864-1.4142136.5857864z"
+            ></path>
+          </g>
+        </g>
+      </svg>
+      <span>Call Us</span>
+    </a>
+
+    <nav>
+      <div class="container-fluid bg-primary text-white p-2">
+        <div class="phone_div">
+          <div class="phone_col mr-3">
+            <i class="fas fa-envelope"></i>
+            info@myresumewriters.com
+          </div>
+          <div class="phone_col">
+            <i class="fas fa-phone-square-alt"></i>
+            +92-313-826-8851
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light pr-5 pl-5">
+      <a class="navbar-brand" href="#">
+        <img src="images/My-Resume-Writers-PNG.png" width="150" alt="" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto" style="font-size: 20px">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--inner page banner  -->
+    <section class="banner-sec book-editors-banner">
+      <div class="container-xl">
+        <div class="banner-wrapper">
+          <div class="row align-items-center">
+            <div class="col-xl-7">
+              <div class="banner-txt-wrapp">
+                <div class="banner-hd" data-aos="fade-right">
+                  <h1 class="ip-banner-heading-h1">
+                    Professional <br />
+                    <strong>Resume Writing</strong> Services
+                  </h1>
+                  <p>
+                    Invest in professional resume writer to help your career,
+                    which is the greatest services a  writer can invest in.
+                  </p>
+                </div>
+                <ul class="banner-list d-flex flex-wrap" data-aos="fade-right">
+                  <li>
+                    <i class="">
+                      <svg
+                        width="18"
+                        height="18"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewbox="0 0 475.452 475.451"
+                        xml:space="preserve"
+                        style="fill: #fff"
+                      >
+                        <g>
+                          <path
+                            d="M468.083,118.385c-3.99-5.33-9.61-9.419-16.854-12.275c0.387,6.665-0.086,12.09-1.42,16.281l-85.65,281.789
+                                       c-1.526,4.948-4.859,8.897-9.992,11.848c-5.141,2.953-10.469,4.428-15.989,4.428H74.66c-22.84,0-36.542-6.652-41.112-19.985
+                                       c-1.903-5.14-1.807-9.229,0.288-12.275c2.092-2.857,5.708-4.288,10.85-4.288h248.102c17.702,0,29.93-3.285,36.688-9.852
+                                       c6.763-6.567,13.565-21.177,20.413-43.824l78.228-258.669c4.186-14.084,2.474-26.457-5.141-37.113s-18.462-15.987-32.548-15.987
+                                       H173.163c-2.474,0-7.329,0.854-14.562,2.568l0.284-0.859c-5.33-1.14-9.851-1.662-13.562-1.571
+                                       c-3.71,0.099-7.137,1.192-10.277,3.289c-3.14,2.094-5.664,4.328-7.566,6.706c-1.903,2.38-3.761,5.426-5.568,9.136
+                                       c-1.805,3.715-3.33,7.142-4.567,10.282c-1.237,3.14-2.666,6.473-4.281,9.998c-1.62,3.521-3.186,6.423-4.71,8.706
+                                       c-1.143,1.523-2.758,3.521-4.854,5.996c-2.091,2.474-3.805,4.664-5.137,6.567c-1.331,1.903-2.19,3.616-2.568,5.14
+                                       c-0.378,1.711-0.19,4.233,0.571,7.566c0.76,3.328,1.047,5.753,0.854,7.277c-0.76,7.232-3.378,16.414-7.849,27.552
+                                       c-4.471,11.136-8.52,19.18-12.135,24.126c-0.761,0.95-2.853,3.092-6.28,6.424c-3.427,3.33-5.52,6.23-6.279,8.704
+                                       c-0.762,0.951-0.81,3.617-0.144,7.994c0.666,4.38,0.907,7.423,0.715,9.136c-0.765,6.473-3.14,15.037-7.139,25.697
+                                       c-3.999,10.657-7.994,19.414-11.993,26.265c-0.569,1.141-2.185,3.328-4.853,6.567c-2.662,3.237-4.283,5.902-4.853,7.99
+                                       c-0.38,1.523-0.33,4.188,0.144,7.994c0.473,3.806,0.426,6.66-0.144,8.562c-1.521,7.228-4.377,15.94-8.565,26.125
+                                       c-4.187,10.178-8.47,18.896-12.851,26.121c-1.138,1.906-2.712,4.145-4.708,6.711c-1.999,2.566-3.568,4.805-4.711,6.707
+                                       c-1.141,1.903-1.903,3.901-2.284,5.996c-0.19,1.143,0.098,2.998,0.859,5.571c0.76,2.566,1.047,4.612,0.854,6.14
+                                       c-0.192,2.662-0.57,6.187-1.141,10.567c-0.572,4.373-0.859,6.939-0.859,7.699c-4.187,11.424-3.999,23.511,0.572,36.269
+                                       c5.33,14.838,14.797,27.36,28.406,37.541c13.61,10.185,27.74,15.27,42.398,15.27h263.521c12.367,0,24.026-4.141,34.971-12.416
+                                       c10.944-8.281,18.227-18.507,21.837-30.696l78.511-258.662C477.412,141.51,475.701,129.234,468.083,118.385z M164.31,118.956
+                                       l5.997-18.274c0.76-2.474,2.329-4.615,4.709-6.423c2.38-1.805,4.808-2.712,7.282-2.712h173.589c2.663,0,4.565,0.903,5.708,2.712
+                                       c1.14,1.809,1.335,3.949,0.575,6.423l-6.002,18.274c-0.764,2.475-2.327,4.611-4.713,6.424c-2.382,1.805-4.805,2.708-7.278,2.708
+                                       H170.593c-2.666,0-4.568-0.9-5.711-2.708C163.74,123.567,163.55,121.431,164.31,118.956z M140.615,192.045l5.996-18.271
+                                       c0.76-2.474,2.331-4.615,4.709-6.423c2.38-1.809,4.805-2.712,7.282-2.712h173.583c2.666,0,4.572,0.9,5.712,2.712
+                                       c1.14,1.809,1.331,3.949,0.568,6.423l-5.996,18.271c-0.759,2.474-2.33,4.617-4.708,6.423c-2.383,1.809-4.805,2.712-7.283,2.712
+                                       H146.895c-2.664,0-4.567-0.9-5.708-2.712C140.043,196.662,139.854,194.519,140.615,192.045z"
+                          ></path>
+                        </g>
+                      </svg>
+                    </i>
+                    Highly responsive
+                  </li>
+                  <li>
+                    <i class="">
+                      <svg
+                        width="18"
+                        height="18"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewbox="0 0 475.452 475.451"
+                        xml:space="preserve"
+                        style="fill: #fff"
+                      >
+                        <g>
+                          <path
+                            d="M468.083,118.385c-3.99-5.33-9.61-9.419-16.854-12.275c0.387,6.665-0.086,12.09-1.42,16.281l-85.65,281.789
+                                       c-1.526,4.948-4.859,8.897-9.992,11.848c-5.141,2.953-10.469,4.428-15.989,4.428H74.66c-22.84,0-36.542-6.652-41.112-19.985
+                                       c-1.903-5.14-1.807-9.229,0.288-12.275c2.092-2.857,5.708-4.288,10.85-4.288h248.102c17.702,0,29.93-3.285,36.688-9.852
+                                       c6.763-6.567,13.565-21.177,20.413-43.824l78.228-258.669c4.186-14.084,2.474-26.457-5.141-37.113s-18.462-15.987-32.548-15.987
+                                       H173.163c-2.474,0-7.329,0.854-14.562,2.568l0.284-0.859c-5.33-1.14-9.851-1.662-13.562-1.571
+                                       c-3.71,0.099-7.137,1.192-10.277,3.289c-3.14,2.094-5.664,4.328-7.566,6.706c-1.903,2.38-3.761,5.426-5.568,9.136
+                                       c-1.805,3.715-3.33,7.142-4.567,10.282c-1.237,3.14-2.666,6.473-4.281,9.998c-1.62,3.521-3.186,6.423-4.71,8.706
+                                       c-1.143,1.523-2.758,3.521-4.854,5.996c-2.091,2.474-3.805,4.664-5.137,6.567c-1.331,1.903-2.19,3.616-2.568,5.14
+                                       c-0.378,1.711-0.19,4.233,0.571,7.566c0.76,3.328,1.047,5.753,0.854,7.277c-0.76,7.232-3.378,16.414-7.849,27.552
+                                       c-4.471,11.136-8.52,19.18-12.135,24.126c-0.761,0.95-2.853,3.092-6.28,6.424c-3.427,3.33-5.52,6.23-6.279,8.704
+                                       c-0.762,0.951-0.81,3.617-0.144,7.994c0.666,4.38,0.907,7.423,0.715,9.136c-0.765,6.473-3.14,15.037-7.139,25.697
+                                       c-3.999,10.657-7.994,19.414-11.993,26.265c-0.569,1.141-2.185,3.328-4.853,6.567c-2.662,3.237-4.283,5.902-4.853,7.99
+                                       c-0.38,1.523-0.33,4.188,0.144,7.994c0.473,3.806,0.426,6.66-0.144,8.562c-1.521,7.228-4.377,15.94-8.565,26.125
+                                       c-4.187,10.178-8.47,18.896-12.851,26.121c-1.138,1.906-2.712,4.145-4.708,6.711c-1.999,2.566-3.568,4.805-4.711,6.707
+                                       c-1.141,1.903-1.903,3.901-2.284,5.996c-0.19,1.143,0.098,2.998,0.859,5.571c0.76,2.566,1.047,4.612,0.854,6.14
+                                       c-0.192,2.662-0.57,6.187-1.141,10.567c-0.572,4.373-0.859,6.939-0.859,7.699c-4.187,11.424-3.999,23.511,0.572,36.269
+                                       c5.33,14.838,14.797,27.36,28.406,37.541c13.61,10.185,27.74,15.27,42.398,15.27h263.521c12.367,0,24.026-4.141,34.971-12.416
+                                       c10.944-8.281,18.227-18.507,21.837-30.696l78.511-258.662C477.412,141.51,475.701,129.234,468.083,118.385z M164.31,118.956
+                                       l5.997-18.274c0.76-2.474,2.329-4.615,4.709-6.423c2.38-1.805,4.808-2.712,7.282-2.712h173.589c2.663,0,4.565,0.903,5.708,2.712
+                                       c1.14,1.809,1.335,3.949,0.575,6.423l-6.002,18.274c-0.764,2.475-2.327,4.611-4.713,6.424c-2.382,1.805-4.805,2.708-7.278,2.708
+                                       H170.593c-2.666,0-4.568-0.9-5.711-2.708C163.74,123.567,163.55,121.431,164.31,118.956z M140.615,192.045l5.996-18.271
+                                       c0.76-2.474,2.331-4.615,4.709-6.423c2.38-1.809,4.805-2.712,7.282-2.712h173.583c2.666,0,4.572,0.9,5.712,2.712
+                                       c1.14,1.809,1.331,3.949,0.568,6.423l-5.996,18.271c-0.759,2.474-2.33,4.617-4.708,6.423c-2.383,1.809-4.805,2.712-7.283,2.712
+                                       H146.895c-2.664,0-4.567-0.9-5.708-2.712C140.043,196.662,139.854,194.519,140.615,192.045z"
+                          ></path>
+                        </g>
+                      </svg>
+                    </i>
+                    Competitive prices
+                  </li>
+                  <li>
+                    <i class="">
+                      <svg
+                        width="18"
+                        height="18"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewbox="0 0 475.452 475.451"
+                        xml:space="preserve"
+                        style="fill: #fff"
+                      >
+                        <g>
+                          <path
+                            d="M468.083,118.385c-3.99-5.33-9.61-9.419-16.854-12.275c0.387,6.665-0.086,12.09-1.42,16.281l-85.65,281.789
+                                       c-1.526,4.948-4.859,8.897-9.992,11.848c-5.141,2.953-10.469,4.428-15.989,4.428H74.66c-22.84,0-36.542-6.652-41.112-19.985
+                                       c-1.903-5.14-1.807-9.229,0.288-12.275c2.092-2.857,5.708-4.288,10.85-4.288h248.102c17.702,0,29.93-3.285,36.688-9.852
+                                       c6.763-6.567,13.565-21.177,20.413-43.824l78.228-258.669c4.186-14.084,2.474-26.457-5.141-37.113s-18.462-15.987-32.548-15.987
+                                       H173.163c-2.474,0-7.329,0.854-14.562,2.568l0.284-0.859c-5.33-1.14-9.851-1.662-13.562-1.571
+                                       c-3.71,0.099-7.137,1.192-10.277,3.289c-3.14,2.094-5.664,4.328-7.566,6.706c-1.903,2.38-3.761,5.426-5.568,9.136
+                                       c-1.805,3.715-3.33,7.142-4.567,10.282c-1.237,3.14-2.666,6.473-4.281,9.998c-1.62,3.521-3.186,6.423-4.71,8.706
+                                       c-1.143,1.523-2.758,3.521-4.854,5.996c-2.091,2.474-3.805,4.664-5.137,6.567c-1.331,1.903-2.19,3.616-2.568,5.14
+                                       c-0.378,1.711-0.19,4.233,0.571,7.566c0.76,3.328,1.047,5.753,0.854,7.277c-0.76,7.232-3.378,16.414-7.849,27.552
+                                       c-4.471,11.136-8.52,19.18-12.135,24.126c-0.761,0.95-2.853,3.092-6.28,6.424c-3.427,3.33-5.52,6.23-6.279,8.704
+                                       c-0.762,0.951-0.81,3.617-0.144,7.994c0.666,4.38,0.907,7.423,0.715,9.136c-0.765,6.473-3.14,15.037-7.139,25.697
+                                       c-3.999,10.657-7.994,19.414-11.993,26.265c-0.569,1.141-2.185,3.328-4.853,6.567c-2.662,3.237-4.283,5.902-4.853,7.99
+                                       c-0.38,1.523-0.33,4.188,0.144,7.994c0.473,3.806,0.426,6.66-0.144,8.562c-1.521,7.228-4.377,15.94-8.565,26.125
+                                       c-4.187,10.178-8.47,18.896-12.851,26.121c-1.138,1.906-2.712,4.145-4.708,6.711c-1.999,2.566-3.568,4.805-4.711,6.707
+                                       c-1.141,1.903-1.903,3.901-2.284,5.996c-0.19,1.143,0.098,2.998,0.859,5.571c0.76,2.566,1.047,4.612,0.854,6.14
+                                       c-0.192,2.662-0.57,6.187-1.141,10.567c-0.572,4.373-0.859,6.939-0.859,7.699c-4.187,11.424-3.999,23.511,0.572,36.269
+                                       c5.33,14.838,14.797,27.36,28.406,37.541c13.61,10.185,27.74,15.27,42.398,15.27h263.521c12.367,0,24.026-4.141,34.971-12.416
+                                       c10.944-8.281,18.227-18.507,21.837-30.696l78.511-258.662C477.412,141.51,475.701,129.234,468.083,118.385z M164.31,118.956
+                                       l5.997-18.274c0.76-2.474,2.329-4.615,4.709-6.423c2.38-1.805,4.808-2.712,7.282-2.712h173.589c2.663,0,4.565,0.903,5.708,2.712
+                                       c1.14,1.809,1.335,3.949,0.575,6.423l-6.002,18.274c-0.764,2.475-2.327,4.611-4.713,6.424c-2.382,1.805-4.805,2.708-7.278,2.708
+                                       H170.593c-2.666,0-4.568-0.9-5.711-2.708C163.74,123.567,163.55,121.431,164.31,118.956z M140.615,192.045l5.996-18.271
+                                       c0.76-2.474,2.331-4.615,4.709-6.423c2.38-1.809,4.805-2.712,7.282-2.712h173.583c2.666,0,4.572,0.9,5.712,2.712
+                                       c1.14,1.809,1.331,3.949,0.568,6.423l-5.996,18.271c-0.759,2.474-2.33,4.617-4.708,6.423c-2.383,1.809-4.805,2.712-7.283,2.712
+                                       H146.895c-2.664,0-4.567-0.9-5.708-2.712C140.043,196.662,139.854,194.519,140.615,192.045z"
+                          ></path>
+                        </g>
+                      </svg>
+                    </i>
+                    Prompt services
+                  </li>
+                  <li>
+                    <i class="">
+                      <svg
+                        width="18"
+                        height="18"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewbox="0 0 475.452 475.451"
+                        xml:space="preserve"
+                        style="fill: #fff"
+                      >
+                        <g>
+                          <path
+                            d="M468.083,118.385c-3.99-5.33-9.61-9.419-16.854-12.275c0.387,6.665-0.086,12.09-1.42,16.281l-85.65,281.789
+                                       c-1.526,4.948-4.859,8.897-9.992,11.848c-5.141,2.953-10.469,4.428-15.989,4.428H74.66c-22.84,0-36.542-6.652-41.112-19.985
+                                       c-1.903-5.14-1.807-9.229,0.288-12.275c2.092-2.857,5.708-4.288,10.85-4.288h248.102c17.702,0,29.93-3.285,36.688-9.852
+                                       c6.763-6.567,13.565-21.177,20.413-43.824l78.228-258.669c4.186-14.084,2.474-26.457-5.141-37.113s-18.462-15.987-32.548-15.987
+                                       H173.163c-2.474,0-7.329,0.854-14.562,2.568l0.284-0.859c-5.33-1.14-9.851-1.662-13.562-1.571
+                                       c-3.71,0.099-7.137,1.192-10.277,3.289c-3.14,2.094-5.664,4.328-7.566,6.706c-1.903,2.38-3.761,5.426-5.568,9.136
+                                       c-1.805,3.715-3.33,7.142-4.567,10.282c-1.237,3.14-2.666,6.473-4.281,9.998c-1.62,3.521-3.186,6.423-4.71,8.706
+                                       c-1.143,1.523-2.758,3.521-4.854,5.996c-2.091,2.474-3.805,4.664-5.137,6.567c-1.331,1.903-2.19,3.616-2.568,5.14
+                                       c-0.378,1.711-0.19,4.233,0.571,7.566c0.76,3.328,1.047,5.753,0.854,7.277c-0.76,7.232-3.378,16.414-7.849,27.552
+                                       c-4.471,11.136-8.52,19.18-12.135,24.126c-0.761,0.95-2.853,3.092-6.28,6.424c-3.427,3.33-5.52,6.23-6.279,8.704
+                                       c-0.762,0.951-0.81,3.617-0.144,7.994c0.666,4.38,0.907,7.423,0.715,9.136c-0.765,6.473-3.14,15.037-7.139,25.697
+                                       c-3.999,10.657-7.994,19.414-11.993,26.265c-0.569,1.141-2.185,3.328-4.853,6.567c-2.662,3.237-4.283,5.902-4.853,7.99
+                                       c-0.38,1.523-0.33,4.188,0.144,7.994c0.473,3.806,0.426,6.66-0.144,8.562c-1.521,7.228-4.377,15.94-8.565,26.125
+                                       c-4.187,10.178-8.47,18.896-12.851,26.121c-1.138,1.906-2.712,4.145-4.708,6.711c-1.999,2.566-3.568,4.805-4.711,6.707
+                                       c-1.141,1.903-1.903,3.901-2.284,5.996c-0.19,1.143,0.098,2.998,0.859,5.571c0.76,2.566,1.047,4.612,0.854,6.14
+                                       c-0.192,2.662-0.57,6.187-1.141,10.567c-0.572,4.373-0.859,6.939-0.859,7.699c-4.187,11.424-3.999,23.511,0.572,36.269
+                                       c5.33,14.838,14.797,27.36,28.406,37.541c13.61,10.185,27.74,15.27,42.398,15.27h263.521c12.367,0,24.026-4.141,34.971-12.416
+                                       c10.944-8.281,18.227-18.507,21.837-30.696l78.511-258.662C477.412,141.51,475.701,129.234,468.083,118.385z M164.31,118.956
+                                       l5.997-18.274c0.76-2.474,2.329-4.615,4.709-6.423c2.38-1.805,4.808-2.712,7.282-2.712h173.589c2.663,0,4.565,0.903,5.708,2.712
+                                       c1.14,1.809,1.335,3.949,0.575,6.423l-6.002,18.274c-0.764,2.475-2.327,4.611-4.713,6.424c-2.382,1.805-4.805,2.708-7.278,2.708
+                                       H170.593c-2.666,0-4.568-0.9-5.711-2.708C163.74,123.567,163.55,121.431,164.31,118.956z M140.615,192.045l5.996-18.271
+                                       c0.76-2.474,2.331-4.615,4.709-6.423c2.38-1.809,4.805-2.712,7.282-2.712h173.583c2.666,0,4.572,0.9,5.712,2.712
+                                       c1.14,1.809,1.331,3.949,0.568,6.423l-5.996,18.271c-0.759,2.474-2.33,4.617-4.708,6.423c-2.383,1.809-4.805,2.712-7.283,2.712
+                                       H146.895c-2.664,0-4.567-0.9-5.708-2.712C140.043,196.662,139.854,194.519,140.615,192.045z"
+                          ></path>
+                        </g>
+                      </svg>
+                    </i>
+                    Impeccable editing skills
+                  </li>
+                </ul>
+                <div class="banner-buttons" data-aos="fade-up">
+                  <a class="btn-1 open-popup" href="javascript:;"
+                    >Get Started</a
+                  >
+                  <a
+                    class="btn-2 chat"
+                    href="javascript:;"
+                    target="_self"
+                    onclick="setButtonURL();"
+                    >Free Consultation</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- include from here -->
+
+            <div class="col-xl-5">
+              <div class="wrap_form">
+                <div
+                  class="form-upper top_banner_heading d-flex"
+                  style="display: none !important"
+                >
+                  <div>
+                    <h3>AVAIL 50% off</h3>
+                  </div>
+                  <a href="javascript:;" class="angle_down"
+                    ><i class="fas fa-angle-double-down" id="change_ic"></i
+                  ></a>
+                </div>
+                <div class="form-box-new">
+                  <div
+                    class="form-lower banner-form-inner"
+                    data-form-type="signup_form"
+                  >
+                    <h3>SIGN UP NOW</h3>
+                    <form
+                      method="post"
+                      enctype="multipart/form-data"
+                      action="thankyou.php"
+                    >
+                      <input type="hidden" id="formType" name="formType" />
+                      <input type="hidden" id="referer" name="referer" />
+                      <div class="form-group">
+                        <i class="fas fa-user"></i>
+                        <input
+                          type="text"
+                          name="con_name"
+                          class="form-control"
+                          placeholder="Enter Your Name"
+                          data-validation="required"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <i class="fas fa-envelope"></i>
+                        <input
+                          type="text"
+                          name="con_email"
+                          class="form-control"
+                          placeholder="Email Address"
+                          data-validation="required"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" name="phone" placeholder="Phone
+                        Number" class="form-control required"
+                        onkeyup="javascript: data-validation=" required"="">
+                      </div>
+                      <div class="form-group">
+                        <textarea
+                          class="form-control"
+                          placeholder="Message"
+                          name="con_message"
+                        ></textarea>
+                      </div>
+                      <div class="form-group">
+                        <div id="formResult"></div>
+                        <input
+                          type="submit"
+                          id="signupBtn"
+                          class="btn btn_red"
+                          name="submit"
+                          value="Submit"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- channels news logoes -->
+    <section class="news-logoes news-logos-inner">
+      <div class="container-xl">
+        <div class="news-wrapper" data-aos="fade-right">
+          <h2>Professional Resume Writer for Hire</h2>
+          <p>
+            Believing Resume Writer Experts with your resume may appear to be a
+            large commitment, but with our recognized history of offering
+            immaculate services to our clients, this is not the case. Did you
+            know that hiring managers take about 6 seconds to evaluate a résumé
+            and determine your position on candidacy? Stand out from the crowd
+            and land your dream job with expert resume writing services. Our
+            career and resume experts will review and rewrite your resume to
+            help you make your next big career move. Let’s craft your career
+            story. We’re an award-winning resume writing service that has
+            equipped over 5,000 professionals with better resumes, cover
+            letters, and LinkedIn profiles. Job hunting isn’t easy. We’ll help
+            you stand out from the crowd through a real conversation with a
+            skilled writer and documents tailored to the jobs you really want.
+          </p>
+          <div class="news-logoes-wrap">
+            <div class="news-logo">
+              <img
+                src="images/news-logo-1.webp"
+                alt="news logo"
+                data-aos="fade-up"
+              />
+            </div>
+            <div class="news-logo">
+              <img
+                src="images/news-logo-2.webp"
+                alt="news logo"
+                data-aos="fade-up"
+              />
+            </div>
+            <div class="news-logo">
+              <img
+                src="images/news-logo-3.webp"
+                alt="news logo"
+                data-aos="fade-up"
+              />
+            </div>
+            <div class="news-logo">
+              <img
+                src="images/news-logo-4.webp"
+                alt="news logo"
+                data-aos="fade-up"
+              />
+            </div>
+            <div class="news-logo">
+              <img
+                src="images/news-logo-5.webp"
+                alt="news logo"
+                data-aos="fade-up"
+              />
+            </div>
+            <div class="news-logo">
+              <img
+                src="images/news-logo-6.webp"
+                alt="news logo"
+                data-aos="fade-up"
+              />
+            </div>
+            <div class="news-logo">
+              <img
+                src="images/news-logo-7.webp"
+                alt="news logo"
+                data-aos="fade-up"
+              />
+            </div>
+            <div class="news-logo">
+              <img
+                src="images/news-logo-8.webp"
+                alt="news logo"
+                data-aos="fade-up"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="resource resource-inner">
+      <div class="container-xl">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="resource-txt-area content-wrapper">
+              <h2 data-aos="fade-left">How It Works?</h2>
+              <p data-aos="fade-up">
+                The resume is the employer's initial point of contact, and it
+                sets the standard for the remainder of the recruiting process.
+                Create a killer CV to create a good first impression. That's how
+                to acquire a professionally Resume and achieve a competitive
+                advantage over other competitors throughout the recruiting
+                process.
+              </p>
+              <div class="resource-counter counter-wrapper">
+                <div class="counter-box">
+                  <img
+                    src="images/resource-icon-1.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <div>
+                    <h3 class="count-num">10</h3>
+                    <p>Years of Experience</p>
+                  </div>
+                </div>
+                <div class="counter-box">
+                  <img src="images/resource-icon-2.png" alt="" />
+                  <div>
+                    <h3 class="count-num">700</h3>
+                    <p>Resumes Written</p>
+                  </div>
+                </div>
+                <div class="counter-box">
+                  <img src="images/resource-icon-3.png" alt="" />
+                  <div>
+                    <h3 class="count-num">250</h3>
+                    <p>American Writers</p>
+                  </div>
+                </div>
+              </div>
+              <div class="resource-btns" data-aos="fade-up">
+                <a href="javascript:;" class="btn-1 open-popup">Get Started</a>
+                <a
+                  href="javascript:;"
+                  class="btn-2 chat"
+                  target="_self"
+                  onclick="setButtonURL();"
+                  >Free Consultation</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 position-relative">
+            <div class="resource-box-img"></div>
+            <img
+              src="images/how itworks.jfif"
+              alt="resource-box-img"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cta -->
+    <section class="cta book-editors-cta">
+      <div class="container-xl">
+        <div class="cta-hdg">
+          <h3 data-aos="fade-up" class="hire_us_heading">
+            Ready to grab the attention of hirers? Contact us today
+          </h3>
+          <p data-aos="fade-up">
+            Do not worry. Let us elevate your resume with the help of our
+            professional resume writers.
+          </p>
+
+          <div class="cta-btns">
+            <a href="javascript:;" class="btn-1 open-popup">Get Started</a>
+            <a href="tel:(800) 861-8851">
+              <i>
+                <svg
+                  height="18"
+                  viewbox="0 0 58 58"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="Page-1" fill-rule="evenodd">
+                    <g
+                      id="003---Call"
+                      fill-rule="nonzero"
+                      transform="translate(-1)"
+                    >
+                      <path
+                        id="Shape"
+                        d="m25.017 33.983c-5.536-5.536-6.786-11.072-7.068-13.29-.0787994-.6132828.1322481-1.2283144.571-1.664l4.48-4.478c.6590136-.6586066.7759629-1.685024.282-2.475l-7.133-11.076c-.5464837-.87475134-1.6685624-1.19045777-2.591-.729l-11.451 5.393c-.74594117.367308-1.18469338 1.15985405-1.1 1.987.6 5.7 3.085 19.712 16.855 33.483s27.78 16.255 33.483 16.855c.827146.0846934 1.619692-.3540588 1.987-1.1l5.393-11.451c.4597307-.9204474.146114-2.0395184-.725-2.587l-11.076-7.131c-.7895259-.4944789-1.8158967-.3783642-2.475.28l-4.478 4.48c-.4356856.4387519-1.0507172.6497994-1.664.571-2.218-.282-7.754-1.532-13.29-7.068z"
+                      ></path>
+                      <path
+                        id="Shape"
+                        d="m47 31c-1.1045695 0-2-.8954305-2-2-.0093685-8.2803876-6.7196124-14.9906315-15-15-1.1045695 0-2-.8954305-2-2s.8954305-2 2-2c10.4886126.0115735 18.9884265 8.5113874 19 19 0 1.1045695-.8954305 2-2 2z"
+                      ></path>
+                      <path
+                        id="Shape"
+                        d="m57 31c-1.1045695 0-2-.8954305-2-2-.0154309-13.800722-11.199278-24.9845691-25-25-1.1045695 0-2-.8954305-2-2s.8954305-2 2-2c16.008947.01763587 28.9823641 12.991053 29 29 0 .530433-.2107137 1.0391408-.5857864 1.4142136-.3750728.3750727-.8837806.5857864-1.4142136.5857864z"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+              </i>
+              (800) 861-8851
+            </a>
+            <a
+              href="javascript:;"
+              class="btn-2 chat"
+              target="_self"
+              onclick="setButtonURL();"
+              >Live Chat</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="resource-sec">
+      <div class="container-xl">
+        <div class="resource-inner-hdg">
+          <h3 class="ip-resource-heading-h3" data-aos="fade-right">
+            WHAT SETS US APART
+          </h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 position-relative">
+            <div class="resource-content">
+              <p data-aos="fade-up">
+                Writing a great resume is the first step of securing a great
+                job. Therefore, we strive to create resumes and cover letters
+                that contain keywords and elements that hiring managers seek. We
+                provide quick, personalized services with no lengthy surveys.
+                Here’s what truly sets us apart.
+              </p>
+              <p data-aos="fade-up">
+                You do not need to concern yourself with all the complications
+                of book editing since we take care of all that for you.
+              </p>
+            </div>
+            <div class="resource-img-box resource-img-2"></div>
+            <img src="images/resume editting.jfif" class="img-fluid" />
+          </div>
+          <div class="col-lg-6">
+            <div class="resource-content-box">
+              <p data-aos="fade-up">
+                Our certified resume writers employ the best practices to curate
+                ATS (Applicant Tracking System) optimized resumes, cover
+                letters, and LinkedIn profiles. We are so confident of our
+                services that we offer a 100% refund if you are unsatisfied with
+                the delivery.
+              </p>
+              <p data-aos="fade-up">
+                Running short on time and require a professional resume
+                immediately? We’ve got you covered. You can now expedite your
+                order with our 24-Hour Rush Service to receive your resume,
+                cover letter, and LinkedIn profile within hours.
+              </p>
+              <p data-aos="fade-up">
+                Ensuring all your guidelines are implemented in your book, our
+                teammates deliver your content within the dates you require.
+              </p>
+              <p data-aos="fade-up">
+                We strive to develop lasting relationships with all our clients
+                and help you achieve your career goals. Our team is very
+                responsive to clients’ email, live chat, texts, and calls. Our
+                career consultants can also help you make the right career move.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- our writers -->
+    <!-- <section class="authors-sec">
+      <div class="container-xl">
+        <div class="text-center author-content">
+          <h2 data-aos="fade-up">Our Writers</h2>
+          <p data-aos="fade-up">
+            Meet the stars of our writing team who are always pushing and
+            setting new standards for us as well as the industry. They have
+            stellar writing experiences under their belt working with bestseller
+            authors and featured by the biggest news outlets and forums.
+          </p>
+        </div>
+        <div class="row authors-sec-slider">
+          <div class="col-lg-4">
+            <div class="author-box">
+              <img src="images/author-1.webp" />
+              <div class="author-hdg-rating">
+                <h3 data-aos="fade-left">Esther Rowe</h3>
+                <p style="text-align: right">
+                  <i>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewbox="0 -10 511.98685 511"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0"
+                        fill="#ffc107"
+                      ></path>
+                    </svg>
+                  </i>
+                  <i>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewbox="0 -10 511.98685 511"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0"
+                        fill="#ffc107"
+                      ></path>
+                    </svg>
+                  </i>
+                  <i>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewbox="0 -10 511.98685 511"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0"
+                        fill="#ffc107"
+                      ></path>
+                    </svg>
+                  </i>
+                  <i>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewbox="0 -10 511.98685 511"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0"
+                        fill="#ffc107"
+                      ></path>
+                    </svg>
+                  </i>
+                  <i>
+                    <svg
+                      width="16"
+                      height="16"
+                      id="color"
+                      enable-background="new 0 0 24 24"
+                      height="512"
+                      viewbox="0 0 24 24"
+                      width="512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m23.79 9.87-5.36 5.49 1.26 7.77c.111.62-.562 1.074-1.1.78l-6.59-3.65v-20.23c.28 0 .56.13.68.4l3.31 7.05 7.37 1.12c.616.11.843.835.43 1.27z"
+                        fill="#eceff1"
+                      ></path>
+                      <path
+                        d="m12 .03v20.23l-6.59 3.65c-.529.297-1.212-.153-1.1-.78l1.26-7.77-5.36-5.49c-.413-.435-.187-1.16.43-1.27l7.37-1.12 3.31-7.05c.12-.27.4-.4.68-.4z"
+                        fill="#ffc107"
+                      ></path>
+                    </svg>
+                  </i>
+
+                  <br />
+                  <span style="font-size: 0.9em">4.5/5</span>
+                </p>
+              </div>
+              <p data-aos="fade-up">
+                Esther is one of our most emotionally intelligent writers. She
+                deconstructs feelings of her characters so eloquently that it
+                leaves even our editors waiting for the next chapter to quench
+                their curiosity about what’s going to happen next. Her
+                empathetic nature gives her an edge and enables her to not just
+                understand the client’s demands but really feel where they’re
+                coming from. Her abilities shine in storytelling whether they’re
+                fantasy fiction, nonfiction biographies, narratives,
+                screenplays, or novels. Hire her as your ebookwritingexperts
+                today.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="author-box">
+              <img src="images/author-2.webp" />
+              <div class="author-hdg-rating">
+                <h3 data-aos="fade-left">Rosalie Guzman</h3>
+                <p style="text-align: right">
+                  <i>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewbox="0 -10 511.98685 511"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0"
+                        fill="#ffc107"
+                      ></path>
+                    </svg>
+                  </i>
+                  <i>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewbox="0 -10 511.98685 511"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0"
+                        fill="#ffc107"
+                      ></path>
+                    </svg>
+                  </i>
+                  <i>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewbox="0 -10 511.98685 511"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0"
+                        fill="#ffc107"
+                      ></path>
+                    </svg>
+                  </i>
+                  <i>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewbox="0 -10 511.98685 511"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0"
+                        fill="#ffc107"
+                      ></path>
+                    </svg>
+                  </i>
+
+                  <br />
+                  <span style="font-size: 0.9em">4/5</span>
+                </p>
+              </div>
+              <p data-aos="fade-up">
+                Rosalie is the most versatile writer you will ever see. She is
+                young, but exceptionally gifted with words and has a magical
+                instinct that is reflected in her work. Her multifaceted profile
+                showcases prized work in songwriting, rap and hip-hop, speeches,
+                scripts, fanfics, short stories, flash fiction, and even comics.
+                What’s surprising is that her flow from rhyming extends into the
+                biographies and memoirs that she is always so eager to work on.
+                Rosalie’s words are almost always trending in the media, and we
+                feel proud to know that it was one of our own who wrote that.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="author-box">
+              <img src="images/author-3.webp" />
+              <div class="author-hdg-rating">
+                <h3 data-aos="fade-left">Leo Weber</h3>
+                <p style="text-align: right">
+                  <i>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewbox="0 -10 511.98685 511"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0"
+                        fill="#ffc107"
+                      ></path>
+                    </svg>
+                  </i>
+                  <i>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewbox="0 -10 511.98685 511"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0"
+                        fill="#ffc107"
+                      ></path>
+                    </svg>
+                  </i>
+                  <i>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewbox="0 -10 511.98685 511"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0"
+                        fill="#ffc107"
+                      ></path>
+                    </svg>
+                  </i>
+                  <i>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewbox="0 -10 511.98685 511"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0"
+                        fill="#ffc107"
+                      ></path>
+                    </svg>
+                  </i>
+                  <i>
+                    <svg
+                      width="16"
+                      height="16"
+                      id="color"
+                      enable-background="new 0 0 24 24"
+                      height="512"
+                      viewbox="0 0 24 24"
+                      width="512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m23.79 9.87-5.36 5.49 1.26 7.77c.111.62-.562 1.074-1.1.78l-6.59-3.65v-20.23c.28 0 .56.13.68.4l3.31 7.05 7.37 1.12c.616.11.843.835.43 1.27z"
+                        fill="#eceff1"
+                      ></path>
+                      <path
+                        d="m12 .03v20.23l-6.59 3.65c-.529.297-1.212-.153-1.1-.78l1.26-7.77-5.36-5.49c-.413-.435-.187-1.16.43-1.27l7.37-1.12 3.31-7.05c.12-.27.4-.4.68-.4z"
+                        fill="#ffc107"
+                      ></path>
+                    </svg>
+                  </i>
+                  <br />
+                  <span style="font-size: 0.9em">4.5/5</span>
+                </p>
+              </div>
+              <p data-aos="fade-up">
+                If there’s anyone who can make a person see with closed eyes,
+                it’s our wizard, Weber. He is an expert in drawing detailed
+                pictures in the heads of his readers and animate them with
+                nothing but words on a page. His descriptions are
+                extraordinarily visual, with a unique ability to change complete
+                scenarios, all within a single sentence. Weber’s words that drop
+                like hammers have earned him a celestial reputation amongst our
+                clients so he stays booked in advance. Through our forum, hire
+                him today to reserve an exclusive spot on his writing schedule.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="author-buttons">
+          <a href="javascript:;" class="btn-1 open-popup" data-aos="fade-up"
+            >Get Started</a
+          >
+          <a href="javascript:;" class="btn-2 chat" data-aos="fade-up"
+            >Free Consultation</a
+          >
+        </div>
+      </div>
+    </section> -->
+
+    <!-- process-sec -->
+    <section
+      class="process-sec"
+      style="
+        background-image: url('images/pricing-hm-pg.jpg');
+        background-size: 100% 100%;
+      "
+    >
+      <h3
+        style="
+          text-align: center;
+          margin-bottom: 50px;
+          font-size: 40px;
+          font-weight: bold;
+        "
+      >
+        Packages
+      </h3>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col">
+            <div
+              class="card package_card"
+              style="width: 25rem; height: 38rem; border-radius: 10px"
+            >
+              <div class="price_tag">
+                <p>-37%</p>
+              </div>
+              <div
+                class="card-body"
+                style="
+                  background-color: rgb(71, 81, 94);
+                  color: #fff;
+                  text-align: center;
+                  height: 7rem;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                "
+              >
+                <h5 class="card-title resume_card_title">Resume/CV</h5>
+                <div>
+                  <h3 class="card-title resume_card_price">
+                    <del>$135</del> $70
+                  </h3>
+                  <button class="btn btn-primary purchase_btn">Purchase</button>
+                </div>
+              </div>
+              <div class="card-body" style="margin-top: 20px; height: 10rem">
+                <ul class="pricing_table">
+                  <li>
+                    <i class="far fa-check-circle"></i>
+                    <span>48 Hour Turnaround Standard</span>
+                  </li>
+                  <li>
+                    <i class="far fa-check-circle"></i>
+                    <span>24 Hour Rush Available</span>
+                  </li>
+                  <li>
+                    <i class="far fa-check-circle"></i>
+                    <span>Services Included: Resume/CV</span>
+                  </li>
+                  <li>
+                    <i class="far fa-check-circle"></i>
+                    <span>Unlimited Revision</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mt-5">
+            <div
+              class="card package_card"
+              style="
+                width: 25rem;
+                height: 38rem;
+                border-radius: 10px;
+                transform: translateY(-20px);
+              "
+            >
+              <div class="price_tag">
+                <p>-37%</p>
+              </div>
+              <div
+                class="card-body"
+                style="
+                  background-color: #333d4a;
+                  color: #fff;
+                  text-align: center;
+                  height: 7rem;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                "
+              >
+                <h5 class="card-title resume_card_title">
+                  Resume/CV + LinkedIn profile
+                </h5>
+                <div>
+                  <h3 class="card-title resume_card_price">
+                    <del>$175</del> $110
+                  </h3>
+                  <button class="btn btn-primary purchase_btn">Purchase</button>
+                </div>
+              </div>
+              <div class="card-body" style="margin-top: 20px; height: 10rem">
+                <ul class="pricing_table">
+                  <li>
+                    <i class="far fa-check-circle"></i>
+                    <span>48 Hour Turnaround Standard</span>
+                  </li>
+                  <li>
+                    <i class="far fa-check-circle"></i>
+                    <span>24 Hour Rush Available</span>
+                  </li>
+                  <li>
+                    <i class="far fa-check-circle"></i>
+                    <span>Services Included: Resume/CV</span>
+                  </li>
+                  <li>
+                    <i class="far fa-check-circle"></i>
+                    <span>Unlimited Revision</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="card package_card"
+              style="width: 25rem; height: 38rem; border-radius: 10px"
+            >
+              <div class="price_tag">
+                <p>-37%</p>
+              </div>
+              <div
+                class="card-body"
+                style="
+                  background-color: rgb(71, 81, 94);
+                  color: #fff;
+                  text-align: center;
+                  height: 7rem;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                "
+              >
+                <h5 class="card-title resume_card_title">
+                  Resume/CV + Cover Letter
+                </h5>
+                <div>
+                  <h3 class="card-title resume_card_price">
+                    <del>$245</del> $160
+                  </h3>
+                  <button class="btn btn-primary purchase_btn">Purchase</button>
+                </div>
+              </div>
+              <div class="card-body" style="margin-top: 20px; height: 10rem">
+                <ul class="pricing_table">
+                  <li>
+                    <i class="far fa-check-circle"></i>
+                    <span>48 Hour Turnaround Standard</span>
+                  </li>
+                  <li>
+                    <i class="far fa-check-circle"></i>
+                    <span>24 Hour Rush Available</span>
+                  </li>
+                  <li>
+                    <i class="far fa-check-circle"></i>
+                    <span>Services Included: Resume/CV</span>
+                  </li>
+                  <li>
+                    <i class="far fa-check-circle"></i>
+                    <span>Unlimited Revision</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- client-section	 testimonials -->
+    <section class="client-sec-bg mt-5">
+      <div class="container-xl">
+        <div class="clients-reviews-sec">
+          <div class="client-content">
+            <h5 class="ip-testimonials-title-h5" data-aos="fade-up">
+              Our Testimonials
+            </h5>
+          </div>
+          <div class="row clients-reviews-slider">
+            <div class="col-lg-4">
+              <div class="client-review-box">
+                <img src="images/review-1.webp" alt="review" />
+                <div class="pl-3">
+                  <h3>Joseph Boucher</h3>
+                  <p>
+                    #1 New York times-bestselling author Over 1 million copies
+                    sold!
+                  </p>
+                </div>
+              </div>
+              <div class="client-box-wrap">
+                <p>
+                  <span class="qoute_para" data-target="0">
+                    I went from getting no calls at all to landing my dream job.
+                    Within the first few days, I heard back from a company I
+                    have been trying to get into for almost two years.
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="client-review-box">
+                <img src="images/review-2.webp" alt="review" />
+                <div class="pl-3">
+                  <h3>Annabell Ison</h3>
+                  <p>#1-ranked agent on Publishers Marketplace</p>
+                </div>
+              </div>
+              <div class="client-box-wrap">
+                <p>
+                  <span class="qoute_para" data-target="1">
+                    I truly felt I was paired with a quality resume writing
+                    professional who sought to understand my profession,
+                    listened to my feedback and really improved upon it.
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="client-review-box">
+                <img src="images/review-3.webp" alt="review" />
+                <div class="pl-3">
+                  <h3>Craig M. Moore</h3>
+                  <p>
+                    Authors include Rachel Hollis, Tilman Fertitta, and John C
+                    Maxwell
+                  </p>
+                </div>
+              </div>
+              <div class="client-box-wrap">
+                <p>
+                  <span class="qoute_para" data-target="2">
+                    The initial questionnaire was very detailed and so was the
+                    follow-up with my resume writer was very responsive and
+                    engaged during the back-and-forth over revisions.
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+      <div class="container-fluid px-0">
+        <div class="container-xl">
+          <div class="ftr-copyrights-banks-cards">
+            <ul class="ftr-terms-privacy">
+              <li><a href="terms-conditions/">Terms &amp; Conditions</a></li>
+              <li><a href="privacy-policy/">Privacy Policy</a></li>
+            </ul>
+            <div class="ftr-add-copy-right">
+              <p>Your address</p>
+              <p>© 2021 Copyright Invictonites</p>
+            </div>
+            <img src="images/bank-cards.webp" alt="bank-cards" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="messagepop pop">
+      <form method="post" id="new_message" action="/messages">
+        <p>
+          <label for="email">Your email or name</label
+          ><input type="text" size="30" name="email" id="email" />
+        </p>
+        <p>
+          <label for="body">Message</label
+          ><textarea rows="6" name="body" id="body" cols="35"></textarea>
+        </p>
+        <p>
+          <input
+            type="submit"
+            value="Send Message"
+            name="commit"
+            id="message_submit"
+          />
+          or <a class="close" href="/">Cancel</a>
+        </p>
+      </form>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+    <!-- Forms validation -->
+    <script src="js/form_validator.min.js"></script>
+
+    <!-- Main Requests Helper -->
+    <script src="js/core/ajaxHelper.js"></script>
+
+    <!-- General Functions -->
+    <script src="js/core/generalHelper.js"></script>
+
+    <!-- Lead Management Of Form -->
+    <script src="js/core/leadManagement.js"></script>
+    <script type="text/javascript">
+      window.$crisp = [];
+      window.CRISP_WEBSITE_ID = "38ddc8ff-caa1-4b07-a334-48a1f4535d8e";
+      (function () {
+        d = document;
+        s = d.createElement("script");
+        s.src = "https://client.crisp.chat/l.js";
+        s.async = 1;
+        d.getElementsByTagName("head")[0].appendChild(s);
+      })();
+    </script>
+  </body>
+</html>
